@@ -15,16 +15,15 @@ grails.project.dependency.resolution = {
         grailsCentral()
         grailsPlugins()
         grailsHome()
-        grailsCentral() 
-        grailsRepo "http://grails.org/plugins"
+        grailsCentral()
     }
     dependencies {
     }
 
     plugins {
-      build(":tomcat:$grailsVersion", ":release:2.2.0") {
+      build(":tomcat:$grailsVersion") {
           export = false
       }
-      runtime ":resources:1.1.6"
+      runtime ":resources:1.2.RC2"
     }
 }
